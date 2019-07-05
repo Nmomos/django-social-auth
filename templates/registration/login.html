@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h2>ソーシャルサービスを選択してログイン</h2>
+  <ul>
+    <li><a href="{% url 'social:begin' 'google-oauth2' %}">Googleでログイン</a></li>
+  </ul>
+  <ul>
+    <li><a href="{% url 'social:begin' 'facebook' %}">Facebookでログイン</a></li>
+  </ul>
+  <ul>
+    <li><a href="{% url 'social:begin' 'twitter' %}">Twitterでログイン</a></li>
+  </ul>
+  <ul>
+    <li><a href="{% url 'social:begin' 'github' %}">GitHubでログイン</a></li>
+  </ul>
+
+  <a href="{% url 'index' %}">戻る</a>
+{% endblock content %}

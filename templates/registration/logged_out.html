@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Logout{% endblock %}
+
+{% block content %}
+<h1>Log Out</h1>
+<p>
+ログアウトしました。<br>
+再度ログインする場合は<a href="{% url 'index' %}">コチラ</a>から実施してください。
+</p>
+
+{% endblock %}
